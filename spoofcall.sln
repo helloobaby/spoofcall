@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "spoofcall", "spoofcall\spoofcall.vcxproj", "{37C7EAD2-5AD4-47BF-A885-BAF756C157BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37C7EAD2-5AD4-47BF-A885-BAF756C157BA}.Debug|x64.ActiveCfg = Debug|x64
+		{37C7EAD2-5AD4-47BF-A885-BAF756C157BA}.Debug|x64.Build.0 = Debug|x64
+		{37C7EAD2-5AD4-47BF-A885-BAF756C157BA}.Debug|x86.ActiveCfg = Debug|Win32
+		{37C7EAD2-5AD4-47BF-A885-BAF756C157BA}.Debug|x86.Build.0 = Debug|Win32
+		{37C7EAD2-5AD4-47BF-A885-BAF756C157BA}.Release|x64.ActiveCfg = Release|x64
+		{37C7EAD2-5AD4-47BF-A885-BAF756C157BA}.Release|x64.Build.0 = Release|x64
+		{37C7EAD2-5AD4-47BF-A885-BAF756C157BA}.Release|x86.ActiveCfg = Release|Win32
+		{37C7EAD2-5AD4-47BF-A885-BAF756C157BA}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {86B86FEE-2FFC-4F26-8FB1-025981DFDEFC}
+	EndGlobalSection
+EndGlobal
