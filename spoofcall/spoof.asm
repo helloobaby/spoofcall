@@ -11,9 +11,9 @@
         mov [rax + 8], r11 ; store the original return address in shell_param.function
      
         mov [rax + 16], rbx ; preserve rbx in shell_param.rbx
-        lea rbx, fixup
+        lea rbx, fixup ;ÐÞ¸Ä·µ»ØµØÖ·
         mov [rax], rbx ; store address of fixup label in shell_param.trampoline 
-        mov rbx, rax ;~ preserve address of shell_param in rbx
+        mov rbx, rax ;preserve address of shell_param in rbx
         
         jmp r10 ; call shell_param.function
      

@@ -10,7 +10,7 @@ namespace detail
 		Args... args
 	) -> Ret
 	{
-		auto fn = (Ret(*)(Args...))(shell);
+		auto fn = (Ret(*)(Args...))(shell); // 调用_spoofer_stub
 		return fn(args...);
 	}
  
@@ -70,9 +70,9 @@ namespace detail
 			typename Fourth = void*
 		>
 		static auto do_call(
-			const void* shell,
-			void* shell_param,
-			First first = First{},
+			const void* shell, //_spoofer_stub (spoof.asm)
+			void* shell_param, //shell_params p
+			First first = First{}, //原函数参数
 			Second second = Second{},
 			Third third = Third{},
 			Fourth fourth = Fourth{}
@@ -103,8 +103,8 @@ namespace detail
 template <typename Ret, typename... Args>
 static inline auto spoof_call(
 	const void* trampoline,
-	Ret(*fn)(Args...),
-	Args... args
+	Ret(*fn)(Args...), // 提供一个已有函数原型推导参数类型Args和返回类型Ret
+	Args... args // 这里参数包里的类型不能隐式转换了,必须一致
 ) -> Ret
 {
 	struct shell_params
